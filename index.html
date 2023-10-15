@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="begin.css">
+  <title>开始界面</title>
+</head>
+
+<body>
+  <div>
+    <h1 class="p1">Welcome BCI World!</h1>
+    <h1 class="p2">Please Choose Your Mode!!!</h1>
+    <div class="radio1">
+      <div class="radio-container">
+        <input type="radio" id="option1" class="radio-input" name="radio-group" value="Online">
+        <label for="option1" class="radio-label">Online</label>
+      </div>
+      <div class="radio-container">
+        <input type="radio" id="option2" class="radio-input" name="radio-group" value="Offline">
+        <label for="option2" class="radio-label">Offline</label>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <button class="serial1" onclick="serial()">Request Serial Port</button>
+  </div>
+
+  <script src="connect_com.js"></script>
+  <script src="GainMode.js"></script>
+
+</body>
+
+</html>
